@@ -70,5 +70,5 @@ print(f"Total score: {total_score}")
 print(f"Normalized score (0–10): {normalized_score:.2f}")
 
 # → Para facilitar que los puntos puedan cambiar en el futuro:
-# Use variables (like 'points_correct', 'points_incorrect', etc.) or store them in a dictionary.
-# That way, you only need to modify one place in the code if the scoring system changes.
+# I used variables (like 'points_correct', 'points_incorrect', etc.).
+# That way, I'd only need to modify one place in the code if the scoring system changes.
