@@ -1,9 +1,11 @@
 # Python exercises for AI Programming Course: Ejercicios de Estructuras Secuenciales
-# Exercises solved by Carmen Montalvo Luque
+# Exercises solved by Carmen Montalvo Luque, 10/2025
 
 # 1. Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
 name = input("What is your name? ")
 print(f"Hello, {name}!")
+
+#--------------------------------------------------------------------------------------
 
 # 2. Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.
 import math
@@ -12,11 +14,15 @@ cathetus2 = float(input("Enter the length of the second cathetus: "))
 hypotenuse = math.sqrt(cathetus1**2 + cathetus2**2)
 print(f"The hypotenuse is: {hypotenuse}")
 
+#--------------------------------------------------------------------------------------
+
 # 3. Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde.
 total_minutes = int(input("Enter the number of minutes: "))
 hours = total_minutes // 60
 minutes = total_minutes % 60
 print(f"{total_minutes} minutes are {hours} hours and {minutes} minutes.")
+
+#--------------------------------------------------------------------------------------
 
 # 4. Dado un número de dos cifras, diseñe un programa que permita obtener el número invertido.
 number = int(input("Enter a two-digit number: "))
@@ -24,6 +30,8 @@ tens = number // 10
 units = number % 10
 reversed_number = units * 10 + tens
 print(f"The inverted number is: {reversed_number}")
+
+#--------------------------------------------------------------------------------------
 
 # 5. Un ciclista parte de una ciudad A a las HH horas, MM minutos y SS segundos.
 # El tiempo de viaje hasta llegar a otra ciudad B es de T segundos.
@@ -33,6 +41,8 @@ minutes = int(input("Enter the starting minutes (MM): "))
 seconds = int(input("Enter the starting seconds (SS): "))
 travel_time = int(input("Enter the travel time in seconds: "))
 
+#--------------------------------------------------------------------------------------
+
 # Convert start time to total seconds, add travel time, and convert back
 total_seconds = hours * 3600 + minutes * 60 + seconds + travel_time
 arrival_hour = (total_seconds // 3600) % 24
@@ -40,6 +50,8 @@ arrival_minute = (total_seconds % 3600) // 60
 arrival_second = total_seconds % 60
 
 print(f"Arrival time is {arrival_hour:02d}:{arrival_minute:02d}:{arrival_second:02d}")
+
+#--------------------------------------------------------------------------------------
 
 # 6. Escribir un programa para calcular la nota final de un examen, considerando que:
 #     Cada respuesta correcta suma 5 puntos.
