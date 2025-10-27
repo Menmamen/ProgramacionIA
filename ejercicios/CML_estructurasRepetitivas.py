@@ -175,3 +175,4 @@ for m in range(1, months + 1):
     principal = payment - interest
     balance -= principal
     print("{}\t{:.2f}\t\t{:.2f}\t\t{:.2f}\t\t{:.2f}".format(m, payment, interest, principal, balance if balance > 0 else 0))
+    
