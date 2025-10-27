@@ -174,7 +174,7 @@ def main():
             print("Invalid option, please try again.")
 
 
-# === PROGRAM START ===
+# Program start
 
 if __name__ == "__main__":
     main()
